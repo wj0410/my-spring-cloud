@@ -35,6 +35,7 @@
         <spring-cloud.version>Hoxton.SR6</spring-cloud.version>
         <mybaits.plus.version>3.3.1</mybaits.plus.version>
         <mybaits.version>2.2.0</mybaits.version>
+        <wj0410-core-tool.version>1.0.2</wj0410-core-tool.version>
     </properties>
 
     <!--全局引入下载依赖地址，并不会引入依赖-->

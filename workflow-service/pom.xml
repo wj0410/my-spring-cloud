@@ -53,7 +53,7 @@
         <dependency>
             <groupId>io.github.wj0410</groupId>
             <artifactId>core-tools</artifactId>
-            <version>1.0.1</version>
+            <version>${wj0410-core-tool.version}</version>
         </dependency>
     </dependencies>
 </project>
