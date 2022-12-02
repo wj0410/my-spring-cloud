@@ -3,7 +3,6 @@ package com.wj.gateway;
 
 import com.wj.common.CommonApplication;
 import com.wj.common.constants.CommonConstants;
-import io.github.wj0410.core.tools.redis.RedisUUID;
 import com.wj.gateway.props.AuthProperties;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -33,9 +32,5 @@ public class GatewayApplication {
     @ConditionalOnMissingBean
     public HttpMessageConverters messageConverters(ObjectProvider<HttpMessageConverter<?>> converters) {
         return new HttpMessageConverters(converters.orderedStream().collect(Collectors.toList()));
-    }
-    @Bean
-    public RedisUUID redisUUID(){
-        return new RedisUUID();
     }
 }

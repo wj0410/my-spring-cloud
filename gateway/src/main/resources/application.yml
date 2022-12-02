@@ -3,3 +3,6 @@ server:
 spring:
   profiles:
     active: dev
+  main:
+    # 当遇到同样名字的时候，是否允许覆盖注册
+    allow-bean-definition-overriding: true

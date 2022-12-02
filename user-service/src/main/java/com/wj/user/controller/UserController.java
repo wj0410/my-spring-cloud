@@ -1,5 +1,6 @@
 package com.wj.user.controller;
 
+import io.github.wj0410.core.tools.restful.exception.ServiceException;
 import io.github.wj0410.core.tools.restful.result.R;
 import io.github.wj0410.core.tools.util.AuthUtil;
 import com.wj.feign.auth.AuthClient;
@@ -17,7 +18,6 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/user")
-//@RefreshScope // nacos配置热更新
 public class UserController {
     @Autowired
     private Registration registration;
@@ -25,9 +25,6 @@ public class UserController {
     private AuthClient authClient;
     @Autowired
     private DictionaryClient dictionaryClient;
-    // 该属性值是从nacos配置中心拉取到的配置
-//    @Value("${config.test}")
-//    private String test;
     @Autowired
     private Config config;
 

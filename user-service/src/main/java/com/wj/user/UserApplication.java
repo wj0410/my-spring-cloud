@@ -15,11 +15,11 @@ public class UserApplication {
     public static void main(String[] args) {
         CommonApplication.run(CommonConstants.USER_APPLICATION_NAME, UserApplication.class, args);
     }
-
-    // 全局异常处理
-    @Bean
-    public ExceptionController exceptionController() {
-        return new ExceptionController();
-    }
+//
+//    // 全局异常处理
+//    @Bean
+//    public ExceptionController exceptionController() {
+//        return new ExceptionController();
+//    }
 
 }

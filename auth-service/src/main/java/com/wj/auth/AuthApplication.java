@@ -14,10 +14,4 @@ public class AuthApplication {
         CommonApplication.run(CommonConstants.AUTH_APPLICATION_NAME,AuthApplication.class,args);
     }
 
-    // 全局异常处理
-    @Bean
-    public ExceptionController exceptionController(){
-        return new ExceptionController();
-    }
-
 }

@@ -19,5 +19,6 @@ spring:
 
 wj:
   auth:
-    ignoreUrls: # 以下接口可以不走网关直接通过服务访问
+    # 以下接口可以不走网关直接通过服务访问
+    skip-gateway-urls:
       - /dictionary/ignore/**
